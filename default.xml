@@ -13,10 +13,14 @@
   <remote  name="aosp-caf"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
+	
+  <remote  name="iridium-github"
+           fetch="https://github.com/TeamIridium"
+           revision="refs/heads/mm6.0" />
 
 <!-- BEGIN AOSP-CAF -->
-  <project name="platform_manifest" path="manifest" remote="aosp-caf" />
-  <project name="platform_build" path="build" remote="aosp-caf" >
+  <project name="ir-caf_platform_manifest" path="manifest" remote="iridium-github" />
+  <project name="ir-caf_platform_build" path="build" remote="iridium-github" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
